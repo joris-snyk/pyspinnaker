@@ -1,5 +1,12 @@
 language: python
 python:
-  - 2.7
+- 2.7
 script:
-  - make test
+- make test
+deploy:
+  provider: pypi
+  user: jdewinne
+  password:
+    secure: o/dV2aPGfoXKG2z4b9tcMd9gErEm0ePort/+Y982k4tW/UdSXyO7FJG8W0PJ96Ix4zYDx2MklB0l8cUDZFa0JJwv6SQLlJo04/va4XwJVR1Isyh6yCCK2HPzVnrAd04ghzpVzFxRalhqDu2pl+t0WesUoW2FV3KiqwIrcR1sYDjKoN2BE+y6Wt0BpBrKGMoSVcFO4rjOc8Had0jrBbFnURDQ6XZ/q0chwmJxDqtQSgqMGW4pSrcsQnDKjresziBiyYfp8zhF2uXqx07mF4AE5XOszuOeXSVCyICAafGJJGqjS69ZIqvYrIh8Nei7E/ogkydJpNh+MuhVL29ksElVWPFV1tPjjk3+yhaGXQWp4INhHCd8gxPR7/YzcQdlsdXf/f0AJyW+ZNn53kPiDv7sxFR0negJjB7fLAUWqlGmNvYxjfsLlsE9CUPSoh0DOtQ7BPdtviVc/2t8QdfDjew3z6yYNh5JzLFR47DjGY7jLRdBXRHHMb8OxtcUvfR4sGMulQjopb9EHVeUWzEgFCHaj4bKn+vXi8zKBNpp2Z7/By2wJS+cPSlLUeCovvj8s7VYjP5rVDg8PYws03bledlpK/NiX1Ls5AvL/zdLOwZJ0zrimZXUzjqdpsbKiMUtLXtp2rWA4AE1mWZnYhFtXmdMhTP9oMBTpJ+8addZWpY3F2s=
+  on:
+    tags: true
